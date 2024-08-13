@@ -84,3 +84,7 @@ rubocop -a # automatically fixes "safe" issues, less aggressive than -A (upperca
 
 ## Contributing
 anyone is welcome to submit a PR with improvements of any kind.
+
+rails g model Project title website description avatar_url user:references
+rails g model StakeholderUpdate title content project:references
+rails g model Subscription user:references project:references
