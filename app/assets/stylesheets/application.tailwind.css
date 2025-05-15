@@ -4,3 +4,23 @@
 
 @import "actiontext.css";
 @import "trix.css";
+
+@layer utilities {
+  .animate-draw path,
+  .animate-draw circle,
+  .animate-draw rect,
+  .animate-draw ellipse {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+  }
+
+  .animate-steam-path {
+    animation: steam 3s ease-out infinite;
+    animation-delay: calc(var(--steam-delay, 0) * 1s);
+  }
+}
+
+/* Custom styles for the coffee theme */
+:root {
+  --steam-delay: 0;
+}

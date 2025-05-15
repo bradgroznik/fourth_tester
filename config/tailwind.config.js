@@ -52,11 +52,32 @@ module.exports = {
             transform: 'scale(1.1) rotate(1deg)',
             textShadow: '0 0 10px #ff8c0d, 0 0 20px #ff8c0d, 0 0 30px #ff8c0d'
           }
+        },
+        steam: {
+          '0%': { transform: 'translateY(0) translateX(-50%) scale(1)', opacity: '0' },
+          '50%': { transform: 'translateY(-20%) translateX(-30%) scale(1.2)', opacity: '0.5' },
+          '100%': { transform: 'translateY(-40%) translateX(-50%) scale(1)', opacity: '0' }
+        },
+        draw: {
+          '0%': { 'stroke-dashoffset': '1000' },
+          '100%': { 'stroke-dashoffset': '0' }
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' }
+        },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' }
         }
       },
       animation: {
         flashfade: 'flashfade 5s ease-in-out',
-        sparkle: 'sparkle 2s ease-in-out infinite'
+        sparkle: 'sparkle 2s ease-in-out infinite',
+        steam: 'steam 4s ease-in-out infinite',
+        draw: 'draw 2.5s ease-in-out forwards',
+        float: 'float 6s ease-in-out infinite',
+        'fade-in': 'fadeIn 2s ease-in forwards'
       }
     },
   },
