@@ -36,59 +36,19 @@
         </div>
         <div class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
           <div class="relative mx-auto w-full">
-            <!-- Comic-style coffee meetup illustration -->
             <div class="relative animate-float">
-              <svg class="w-full h-auto" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Background elements -->
-                <path class="animate-draw" d="M50 350 L450 350" stroke="#ff8c0d" stroke-width="4" stroke-linecap="round"/>
-                <path class="animate-draw" d="M100 150 L100 350" stroke="#ff8c0d" stroke-width="4" stroke-opacity="0.3"/>
-                <path class="animate-draw" d="M400 150 L400 350" stroke="#ff8c0d" stroke-width="4" stroke-opacity="0.3"/>
-                
-                <!-- Coffee shop window -->
-                <rect x="80" y="100" width="340" height="250" rx="8" class="animate-draw" stroke="#ff8c0d" stroke-width="4" fill="none"/>
-                
-                <!-- Table -->
-                <ellipse cx="250" cy="300" rx="80" ry="20" class="animate-draw" stroke="#ff8c0d" stroke-width="4" fill="none"/>
-                
-                <!-- Coffee cups -->
-                <g class="animate-steam">
-                  <path d="M200 270 Q200 260 210 260 H230 Q240 260 240 270" stroke="#ff8c0d" stroke-width="3" fill="none"/>
-                  <path d="M300 270 Q300 260 310 260 H330 Q340 260 340 270" stroke="#ff8c0d" stroke-width="3" fill="none"/>
-                  <!-- Steam from cups -->
-                  <path class="animate-steam-path" d="M215 250 Q220 240 225 250" stroke="#ff8c0d" stroke-width="2" stroke-opacity="0.6"/>
-                  <path class="animate-steam-path" d="M315 250 Q320 240 325 250" stroke="#ff8c0d" stroke-width="2" stroke-opacity="0.6"/>
-                </g>
-                
-                <!-- Person 1 -->
-                <g class="animate-draw">
-                  <!-- Head -->
-                  <circle cx="180" cy="200" r="25" stroke="#ff8c0d" stroke-width="3" fill="none"/>
-                  <!-- Body -->
-                  <path d="M180 225 L180 280" stroke="#ff8c0d" stroke-width="3"/>
-                  <!-- Arms -->
-                  <path d="M180 240 L150 260" stroke="#ff8c0d" stroke-width="3"/>
-                  <path d="M180 240 L210 260" stroke="#ff8c0d" stroke-width="3"/>
-                </g>
-                
-                <!-- Person 2 -->
-                <g class="animate-draw">
-                  <!-- Head -->
-                  <circle cx="320" cy="200" r="25" stroke="#ff8c0d" stroke-width="3" fill="none"/>
-                  <!-- Body -->
-                  <path d="M320 225 L320 280" stroke="#ff8c0d" stroke-width="3"/>
-                  <!-- Arms -->
-                  <path d="M320 240 L290 260" stroke="#ff8c0d" stroke-width="3"/>
-                  <path d="M320 240 L350 260" stroke="#ff8c0d" stroke-width="3"/>
-                </g>
-                
-                <!-- Speech bubbles -->
-                <g class="animate-fade-in">
-                  <path d="M220 150 Q220 130 240 130 H260 Q280 130 280 150" stroke="#ff8c0d" stroke-width="2" fill="none"/>
-                  <circle cx="230" cy="140" r="3" fill="#ff8c0d"/>
-                  <circle cx="240" cy="140" r="3" fill="#ff8c0d"/>
-                  <circle cx="250" cy="140" r="3" fill="#ff8c0d"/>
-                </g>
-              </svg>
+              <!-- Comic-style coffee cup image -->
+              <div class="relative bg-primary-900/20 backdrop-blur-sm rounded-xl p-8">
+                <div class="relative overflow-hidden rounded-lg">
+                  <img 
+                    src="<%= asset_path('screenshot_2025.png') %>" 
+                    alt="Retro comic style coffee cup with steam" 
+                    class="w-full h-auto object-cover animate-fade-in"
+                  />
+                  <!-- Radial glow effect -->
+                  <div class="absolute inset-0 bg-gradient-radial from-primary-500/20 to-transparent pointer-events-none"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

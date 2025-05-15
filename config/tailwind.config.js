@@ -29,6 +29,9 @@ module.exports = {
         },
         secondary: colors.black
       },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      },
       keyframes: {
         flashfade: { "0%, 100%": { opacity: "0" }, "5%, 80%": { opacity: "1" } },
         sparkle: {
